@@ -567,7 +567,7 @@
 }
 
 .cinput{
-    border: 1px solid rgb(233, 230, 230);
+    border: 1px solid rgb(240, 240, 240);
     border-radius: 8px;
     width: 100%;
     height: 45px;
@@ -579,7 +579,7 @@
     position: relative;
     top: 8px;
     left: 4px;
-    background-color: rgb(255, 248, 248);
+    background-color: white;
     color: #6C7175;
     font-size: 13px;
     font-family: "Inter", serif;
@@ -587,7 +587,7 @@
 
 .l2{
     position: relative;
-    background-color: rgb(255, 248, 248);
+    background-color: white;
     top: 5px;
     color: #6C7175;
     font-size: 13px;
@@ -599,7 +599,7 @@
 }
 
 .input_box textarea{
-    border: 1px solid rgb(233, 230, 230);
+    border: 1px solid rgb(240, 240, 240);
     border-radius: 8px;
     width: 100%;
     height: 90px;
@@ -747,7 +747,7 @@ textarea::placeholder{
     z-index: 1;
     border: transparent;
     border-radius: 30px;
-    bottom: 35rem;
+    bottom: 34rem;
     width: 100%;
     height: 135px;
     backdrop-filter: blur(15px);
@@ -1487,7 +1487,7 @@ textarea::placeholder{
     z-index: 1;
     border: transparent;
     border-radius: 30px;
-    bottom: 35rem;
+    bottom: 34rem;
     width: 100%;
     height: 135px;
     backdrop-filter: blur(15px);
@@ -2242,7 +2242,7 @@ textarea::placeholder{
     z-index: 1;
     border: transparent;
     border-radius: 30px;
-    bottom: 35rem;
+    bottom: 34rem;
     width: 100%;
     height: 135px;
     backdrop-filter: blur(15px);
