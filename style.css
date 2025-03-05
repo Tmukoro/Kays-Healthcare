@@ -742,6 +742,16 @@ textarea::placeholder{
     filter: brightness(30%);
 }
 
+.glass{
+    position: fixed;
+    z-index: 1;
+    border: transparent;
+    border-radius: 30px;
+    bottom: 35rem;
+    width: 100%;
+    height: 135px;
+    backdrop-filter: blur(15px);
+}
 
 .navv{
     background-color: #FAFBFC;
@@ -1470,6 +1480,17 @@ textarea::placeholder{
     height: 100%;
     z-index: -1;
     filter: brightness(30%);
+}
+
+.glass{
+    position: fixed;
+    z-index: 1;
+    border: transparent;
+    border-radius: 30px;
+    bottom: 35rem;
+    width: 100%;
+    height: 135px;
+    backdrop-filter: blur(15px);
 }
 
 
@@ -2216,6 +2237,16 @@ textarea::placeholder{
     filter: brightness(30%);
 }
 
+.glass{
+    position: fixed;
+    z-index: 1;
+    border: transparent;
+    border-radius: 30px;
+    bottom: 35rem;
+    width: 100%;
+    height: 135px;
+    backdrop-filter: blur(15px);
+}
 
 .navv{
     background-color: white;
