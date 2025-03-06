@@ -745,7 +745,7 @@ textarea::placeholder{
 .glass{
     position: fixed;
     z-index: 1;
-    border: transparent;
+    border: 1px solid;
     border-radius: 30px;
     bottom: 0rem;
     top: -1.4rem;
@@ -759,7 +759,7 @@ textarea::placeholder{
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 2rem;
+    top: 3rem;
     left: 0.6rem;
     border-radius: 50px;
     height: 80px;
@@ -817,7 +817,7 @@ textarea::placeholder{
     display: block;
     text-align: center;
     position: absolute;
-    top: -310px;
+    top: -290px;
     opacity: 0%;
     right: 15px;
     border-radius: 8px;
@@ -1501,7 +1501,7 @@ textarea::placeholder{
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 1rem;
+    top: 3rem;
     left: 0rem;
     border-radius: 50px;
     height: 80px;
@@ -1558,7 +1558,7 @@ textarea::placeholder{
     list-style: none;
     display: block;
     position: absolute;
-    top: -310px;
+    top: -300px;
     opacity: 0%;
     right: 25px;
     border-radius: 8px;
@@ -2256,7 +2256,7 @@ textarea::placeholder{
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 1rem;
+    top: 3rem;
     left: 0rem;
     border-radius: 50px;
     height: 80px;
