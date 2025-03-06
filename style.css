@@ -40,7 +40,7 @@
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 3rem;
+    top: 2.5rem;
     left: 6rem;
     border-radius: 50px;
     height: 80px;
@@ -48,14 +48,15 @@
     display: flex;
     justify-content: space-between;
     font-family: "Inter", serif;
+    transition: all 0.3s ease 0s;
 }
 
 .glass{
     position: fixed;
     z-index: 1;
-    border: transparent;
+    border: 1px solid;
     border-radius: 30px;
-    bottom: 35rem;
+    bottom: 35.5rem;
     width: 100%;
     height: 135px;
     backdrop-filter: blur(15px);
@@ -206,6 +207,7 @@
     cursor: pointer;
     border-radius: 50%;
     padding: 5px 8px; 
+    outline: none;
 }
 
 .span_nav span{
@@ -578,7 +580,7 @@
 .l1{
     position: relative;
     top: 8px;
-    left: 4px;
+    left: 10px;
     background-color: white;
     color: #6C7175;
     font-size: 13px;
@@ -588,7 +590,8 @@
 .l2{
     position: relative;
     background-color: white;
-    top: 5px;
+    top: 8px;
+    left: 10px;
     color: #6C7175;
     font-size: 13px;
     font-family: "Inter", serif;
@@ -596,6 +599,7 @@
 
 .cinput::placeholder{
     color: #1D2B36;
+    padding-left: 11px;
 }
 
 .input_box textarea{
@@ -608,7 +612,8 @@
 
 textarea::placeholder{
     color: #1D2B36;
-    padding-top: 7px;
+    padding-top: 10px;
+    padding-left: 11px;
 }
 
 .sub_btn{
@@ -651,6 +656,7 @@ textarea::placeholder{
 
 .fbox1 p{
     text-decoration: none;
+    color: #1D2B36;
 }
 
 .logo{
@@ -670,6 +676,8 @@ textarea::placeholder{
 
 .fbox1 div p{
     padding-left: 1rem;
+    text-decoration: none;
+    color: inherit;
 }
 
 .fbox2{
@@ -706,6 +714,10 @@ textarea::placeholder{
     float: left;
     margin-top: 7rem;
     font-size: 14px;
+}
+
+.fbox3 p{
+    color: #1D2B36;
 }
 
 
@@ -745,7 +757,7 @@ textarea::placeholder{
 .glass{
     position: fixed;
     z-index: 1;
-    border: 1px solid;
+    border: transparent;
     border-radius: 30px;
     bottom: 0rem;
     top: -1.4rem;
@@ -759,7 +771,7 @@ textarea::placeholder{
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 3rem;
+    top: 2.5rem;
     left: 0.6rem;
     border-radius: 50px;
     height: 80px;
@@ -767,6 +779,7 @@ textarea::placeholder{
     display: flex;
     justify-content: space-between;
     font-family: "Inter", serif;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -1280,7 +1293,7 @@ textarea::placeholder{
 
 
 #contact_sect{
-    margin-top: 12rem;
+    margin-top: 3rem;
     height: 900px;
     font-family: "Inter", serif;
     display: flex;
@@ -1340,6 +1353,10 @@ textarea::placeholder{
     outline: none;
 }
 
+.cinput::placeholder{
+    padding-left: 11px;
+}
+
 .input_box textarea{
     border: 1px solid rgb(233, 230, 230);
     border-radius: 8px;
@@ -1391,7 +1408,7 @@ textarea::placeholder{
     float: none;
     width: 90%;
     height: 260px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-left: 1rem;
 }
 
@@ -1401,7 +1418,7 @@ textarea::placeholder{
     height: 60px;
     width: 63px;
     gap: 5px;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -1497,18 +1514,19 @@ textarea::placeholder{
 
 
 .navv{
-    background-color:white;
+    background-color: #FAFBFC;
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 3rem;
-    left: 0rem;
+    top: 2.5rem;
+    left: 0.6rem;
     border-radius: 50px;
     height: 80px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     font-family: "Inter", serif;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -2088,8 +2106,8 @@ textarea::placeholder{
     outline: none;
 }
 
-.cinput:placeholder{
-    font-size: 16px;
+.cinput::placeholder{
+    padding-left: 11px;
 }
 
 .input_box textarea{
@@ -2100,9 +2118,6 @@ textarea::placeholder{
     outline: none;
 }
 
-.input_box textarea:placeholder{
-    font-size: 16px;
-}
 
 .in_btn{
     margin: auto;
@@ -2252,18 +2267,19 @@ textarea::placeholder{
 }
 
 .navv{
-    background-color: white;
+    background-color: #FAFBFC;
     border: 1px #FAFBFC;
     position: fixed;
     z-index: 1000;
-    top: 3rem;
-    left: 0rem;
+    top: 2.5rem;
+    left: 0.6rem;
     border-radius: 50px;
     height: 80px;
-    width: 100%;
+    width: 95%;
     display: flex;
     justify-content: space-between;
     font-family: "Inter", serif;
+    transition: all 0.3s ease 0s;
 }
 
 
@@ -2845,6 +2861,10 @@ textarea::placeholder{
     outline: none;
 }
 
+.cinput::placeholder{
+    padding-left: 11px;
+}
+
 .cinput:placeholder-shown{
     font-size: 16px;
 }
@@ -2860,6 +2880,7 @@ textarea::placeholder{
 .input_box textarea:placeholder-shown{
     font-size: 16px;
 }
+
 
 .in_btn{
     margin: auto;
