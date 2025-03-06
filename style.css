@@ -726,6 +726,9 @@ textarea::placeholder{
     background-position-y: 0%;
     z-index: 1;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -1466,6 +1469,9 @@ textarea::placeholder{
     background-position-y: 0%;
     z-index: 1;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -2221,6 +2227,9 @@ textarea::placeholder{
     background-position-y: 0%;
     z-index: 1;
     position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
