@@ -54,7 +54,7 @@
 .glass{
     position: fixed;
     z-index: 1;
-    border: 1px solid;
+    border: transparent;
     border-radius: 30px;
     bottom: 35.5rem;
     width: 100%;
