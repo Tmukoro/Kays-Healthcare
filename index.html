@@ -235,27 +235,23 @@
             
             <div class="input_box">
 
-                <form action="#" method="post" enctype="text/plain">
+                <form action="process.php" method="post" enctype="text/plain">
                 
                 <label class="l1">Your name</label>
-                <input type="text" id="name" placeholder="John Doe" class="cinput"> 
+                <input type="text" id="name" name="name" placeholder="John Doe" class="cinput"> 
 
                 <label class="l1">Email Address</label>
-                <input type="email" id="email" placeholder="Johndoe7@gmail.ocm" class="cinput">
+                <input type="email" id="email" name="email" placeholder="Johndoe7@gmail.ocm" class="cinput">
 
                 <label class="l1">Phone number</label>
-                <input type="number" id="phoneno" placeholder="+234*****" class="cinput">
+                <input type="number" id="phoneno" name="phoneno" placeholder="+234*****" class="cinput">
 
                 <label class="l2">How can we help?</label>
-                <textarea placeholder="Please fill in your request here"></textarea>
+                <textarea id="forum" name="forum" placeholder="Please fill in your request here"></textarea>
                  
                 <div class="in_btn">
                 <input type="submit" class="sub_btn" value="Send your message">
                 </div>
-
-
-
-
 
                 </form>
 

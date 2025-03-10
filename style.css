@@ -574,6 +574,7 @@
     width: 100%;
     height: 45px;
     margin-bottom: 2rem;
+    padding-left: 11px;
     outline: none;
 }
 
@@ -599,7 +600,7 @@
 
 .cinput::placeholder{
     color: #1D2B36;
-    padding-left: 11px;
+    padding-left: 4px;
 }
 
 .input_box textarea{
@@ -608,12 +609,12 @@
     width: 100%;
     height: 90px;
     outline: none;
+    padding-top: 11px;
+    padding-left: 11px;
 }
 
 textarea::placeholder{
     color: #1D2B36;
-    padding-top: 10px;
-    padding-left: 11px;
 }
 
 .sub_btn{
@@ -1351,11 +1352,14 @@ textarea::placeholder{
     height: 43px;
     margin-bottom: 2rem;
     outline: none;
+    padding-left: 15px;
 }
 
 .cinput::placeholder{
-    padding-left: 11px;
+    padding-left: 3px;
 }
+
+
 
 .input_box textarea{
     border: 1px solid rgb(233, 230, 230);
@@ -1363,6 +1367,13 @@ textarea::placeholder{
     width: 100%;
     height: 90px;
     outline: none;
+    padding-top: 18px;
+    padding-left: 8px;
+}
+
+.input_box textarea::placeholder{
+    padding-top: 1px;
+    padding-left: 4px;
 }
 
 .in_btn{
@@ -2101,14 +2112,17 @@ textarea::placeholder{
     border: 1px solid rgb(233, 230, 230);
     border-radius: 8px;
     width: 100%;
-    height: 50px;
-    margin-bottom: 2rem; 
+    height: 43px;
+    margin-bottom: 2rem;
     outline: none;
+    padding-left: 10px;
 }
 
 .cinput::placeholder{
-    padding-left: 11px;
+    padding-left: 3px;
 }
+
+
 
 .input_box textarea{
     border: 1px solid rgb(233, 230, 230);
@@ -2116,6 +2130,13 @@ textarea::placeholder{
     width: 100%;
     height: 90px;
     outline: none;
+    padding-top: 18px;
+    padding-left: 8px;
+}
+
+.input_box textarea::placeholder{
+    padding-top: 1px;
+    padding-left: 4px;
 }
 
 
@@ -2141,7 +2162,7 @@ textarea::placeholder{
 
 .sub_btn:hover{
     background-color: rgb(253, 76, 106);
-    width: 170px;
+    width: 180px;
 }
 
 
@@ -2856,28 +2877,32 @@ textarea::placeholder{
     border: 1px solid rgb(233, 230, 230);
     border-radius: 8px;
     width: 100%;
-    height: 50px;
-    margin-bottom: 2rem; 
+    height: 43px;
+    margin-bottom: 2rem;
     outline: none;
+    padding-left: 10px;
 }
 
 .cinput::placeholder{
-    padding-left: 11px;
-}
-
-.cinput:placeholder-shown{
+    padding-left: 3px;
     font-size: 16px;
 }
 
+
+
 .input_box textarea{
-    border: 1px solid rgb(233, 230, 230); 
+    border: 1px solid rgb(233, 230, 230);
     border-radius: 8px;
     width: 100%;
     height: 90px;
     outline: none;
+    padding-top: 18px;
+    padding-left: 8px;
 }
 
-.input_box textarea:placeholder-shown{
+.input_box textarea::placeholder{
+    padding-top: 1px;
+    padding-left: 4px;
     font-size: 16px;
 }
 
@@ -2904,7 +2929,7 @@ textarea::placeholder{
 
 .sub_btn:hover{
     background-color: rgb(253, 76, 106);
-    width: 170px;
+    width: 190px;
 }
 
 
