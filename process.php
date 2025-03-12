@@ -1,42 +1,33 @@
 <?php
 
-if($_SERVER ['REQUEST_METHOD'] == 'POST'){
+if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $name = $_POST['name'];
+$name = $_POST['name'];
 
-    $email = $_POST['email'];
+$email = $_POST['email'];
 
-    $phone = $_POST['phoneno'];
+$number = $_POST['phoneno'];
 
-    $forum = $_POST['forum'];
-
-
-    $user =[
-        'name'=> $name,
-
-        'email'=> $email,
-
-        'phone'=> $phone,
-
-        'forum'=> $forum
-    ];
-
-    $jsonData = file_get_contents("users.json");
-
-    $dataArr = json_decode($jsonData,true);
-
-    if(!is_array($dataArr)){
-        $dataArr = [];
-    }
+$forum = $_POST['forum'];
 
 
-    $dataArr[] = $user;
+$conn = new mysqli('localhost', 'root', '', 'users' );
 
-    file_put_contents("users.json", json_encode($dataArr, JSON_PRETTY_PRINT));
-  
-    echo "User saved in json";
+if ($conn->connect_error) {
+    die('Connection error!'. $conn->connect_error);
+}else{
+    $stmt = $conn->prepare("INSERT INTO info(Name, Email, Number, Forum)VALUES(?, ?, ?, ?)");
+    $stmt->bind_param("ssis", $name, $email, $number, $forum);
+    $stmt->execute();
+    echo "Your feedback has been registered";
+    $stmt ->close();
+    $conn ->close();
+}
 
 }
+
+
+
 
 
 
