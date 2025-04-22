@@ -1,5 +1,6 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { getAuth, signInWithEmailAndPassword, signInWithPopup} from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import{GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js"; 
 
 
 
@@ -41,8 +42,40 @@ submit.addEventListener("click", (e)=> {
 })
 
 
+const googlebtn = document.getElementById("googlebtn2");
 
-const visbtn = document.getElementById("visibtn");
+googlebtn.addEventListener("click", ()=>{
+
+  const auth = getAuth();
+
+signInWithPopup(auth, provider)
+
+  .then((result) => {
+
+    const credential = GoogleAuthProvider.credentialFromResult(result);
+
+    const token = credential.accessToken;
+    
+    const user = result.user;
+
+    window.location.href = "kays.html";
+
+  }).catch((error) => {
+    const errorCode = error.code;
+
+    const errorMessage = error.message;
+
+    const email = error.customData.email;
+
+    const credential = GoogleAuthProvider.credentialFromError(error);
+
+    console.log("error");
+  })
+})
+
+
+const password = document.getElementById("loginPassword");
+const visbtn = document.getElementById("visibtn2");
 
 password.addEventListener("focus", ()=>{
   visbtn.style.opacity = "100%";
@@ -59,7 +92,7 @@ password.addEventListener("blur", ()=>{
 
 visbtn.addEventListener("click", ()=>{
 
-  var passField = document.getElementById("password");
+  var passField = document.getElementById("loginPassword");
 
   passField.type = passField.type === "password" ? "text": "password";
 })
