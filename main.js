@@ -4,6 +4,8 @@ const span_block = document.querySelector(".span_nav");
 
 const nav_list = document.querySelector(".nav_list");
 
+const nav2 = document.querySelector(".nav_2")
+
 
 img.addEventListener("mouseover", () =>{
     img.src = "images/tree3.png";
@@ -18,6 +20,8 @@ span_block.addEventListener( "click", () => {
     span_block.classList.toggle("active");
 
     nav_list.classList.toggle("active");
+
+    nav2.classList.toggle("active");
 
 })
 
