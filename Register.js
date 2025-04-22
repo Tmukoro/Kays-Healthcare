@@ -58,7 +58,7 @@ signInWithRedirect(auth, provider)
     
     const user = result.user;
 
-    window.location = "kays.html";
+    window.location.href = "kays.html";
 
   }).catch((error) => {
     const errorCode = error.code;
