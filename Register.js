@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-import { getAuth, createUserWithEmailAndPassword, signInWithPopup } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithRedirect } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js";
 import{GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js"; 
 const firebaseConfig = {
   apiKey: "AIzaSyCwe_xxKpsKDCteEO8VsfFqx_NpQsOd1N8",
@@ -48,7 +48,7 @@ googlebtn.addEventListener("click", ()=>{
 
   const auth = getAuth();
 
-signInWithPopup(auth, provider)
+signInWithRedirect(auth, provider)
 
   .then((result) => {
 
