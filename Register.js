@@ -48,7 +48,7 @@ googlebtn.addEventListener("click", ()=>{
 
   const auth = getAuth();
 
-signInWithPopup(auth, provider)
+signInWithRedirect(auth, provider)
 
   .then((result) => {
 
