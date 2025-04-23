@@ -15,7 +15,7 @@ const firebaseConfig = {
 
   const app = initializeApp(firebaseConfig);
 
-  document.getElementById("reset-form").addEventListener("submit", (e)=>{
+  document.getElementById("resetForm").addEventListener("submit", (e)=>{
     
     e.preventDefault();
     
