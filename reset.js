@@ -23,7 +23,7 @@ const firebaseConfig = {
     const email = document.getElementById("email");
     const rmessage = document.getElementById("message");
   
-    sendPasswordResetEmail(auth,email)  
+    sendPasswordResetEmail(auth,email.value)  
 
     .then(()=>{
         rmessage.textContent = "Password reset email has been sent";
