@@ -7,7 +7,7 @@ Coded Landing page of a design made from a friend credits to him: https://www.fi
 
 <h2>Components Used</h2>
 <ul>
-  <li>Standard Html + Css</li>
+  <li>Standard HTML + CSS</li>
   <li>Javascript</li>
   <li>Firebase (Authentication)</li>
 </ul>
